@@ -21,9 +21,9 @@
 
 <script lang="ts" setup>
 import { ref } from "vue";
-import { Modes } from "../shared/enums/Modes.ts";
+import { Modes } from "../shared/enums/Modes";
 
-import { ILabelValue } from "../shared/interfaces";
+import type { ILabelValue } from "../shared/interfaces";
 import TimePicker from "./TimePicker.vue";
 
 const emit = defineEmits(["modeSelected"]);

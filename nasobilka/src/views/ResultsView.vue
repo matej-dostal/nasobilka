@@ -11,7 +11,7 @@
             </p>
         </div>
 
-        <p class="text-white mt-8 text-2xl">
+        <p class="text-white mt-10 text-2xl">
             Úspěšnost:
             <span
                 class="font-bold text-3xl"
@@ -21,7 +21,7 @@
         </p>
 
         <button
-            class="bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded-md mt-20 text-lg"
+            class="bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded-md mt-auto mb-auto text-lg"
             @click="$emit('close')"
         >
             Zpět na menu

@@ -27,8 +27,9 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, PropType, onMounted } from "vue";
-import { ILabelValue } from "@/shared/interfaces";
+import { ref, onMounted } from "vue";
+import type { PropType } from "vue";
+import type { ILabelValue } from "@/shared/interfaces";
 
 import Header from "./Header.vue";
 import MultiplicationView from "@/views/MultiplicationView.vue";

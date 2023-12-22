@@ -38,7 +38,7 @@
 
 <script lang="ts" setup>
 import { ref, onMounted } from "vue";
-import { IExample } from "../shared/interfaces";
+import type { IExample } from "../shared/interfaces";
 
 const emit = defineEmits(["statistics"]);
 
@@ -60,11 +60,11 @@ onMounted(() => {
 
 const generateNextExample = () => {
     let okay = false;
-    let op: string,
-        first: number,
-        second: number,
-        res: number,
-        example: IExample;
+    let op: string = "*",
+        first: number = -1,
+        second: number = -1,
+        res: number = -1,
+        example: IExample = { first: -1, second: -1, operator: "", result: -1 };
 
     studentResult.value = null;
 

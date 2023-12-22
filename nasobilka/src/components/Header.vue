@@ -18,8 +18,9 @@
 </template>
 
 <script lang="ts" setup>
-import { PropType, onMounted, ref } from "vue";
-import { ILabelValue } from "@/shared/interfaces";
+import { onMounted, ref } from "vue";
+import type { PropType } from "vue";
+import type { ILabelValue } from "@/shared/interfaces";
 
 const emit = defineEmits(["terminatePractice", "practiceFinished"]);
 const props = defineProps({

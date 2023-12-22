@@ -21,20 +21,20 @@
 
 <script lang="ts" setup>
 import { ref } from "vue";
-import { ILabelValue } from "./shared/interfaces";
+import type { ILabelValue } from "./shared/interfaces";
 
 import Menu from "./components/Menu.vue";
 import Practice from "./components/Practice.vue";
 import ResultsView from "./views/ResultsView.vue";
 
-const menuVisible = ref(false);
+const menuVisible = ref(true);
 
 const mode = ref({} as ILabelValue);
 const duration = ref(0);
 
-const resultsVisible = ref(true);
-const correct = ref(9);
-const wrong = ref(1);
+const resultsVisible = ref(false);
+const correct = ref(0);
+const wrong = ref(0);
 
 const newModeSelected = (newMode: ILabelValue, newDuration: number) => {
     menuVisible.value = false;
