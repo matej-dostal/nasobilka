@@ -44,8 +44,14 @@ export default defineConfig({
                         purpose: "apple touch icon",
                     },
                     {
-                        src: "img/icons/mstile-150x150.png",
-                        sizes: "270x270",
+                        src: "img/icon-256x256.png",
+                        sizes: "256x256",
+                        type: "image/png",
+                        purpose: "any",
+                    },
+                    {
+                        src: "img/android-chrome-maskable-192x192.png",
+                        sizes: "192x192",
                         type: "image/png",
                         purpose: "maskable",
                     },
