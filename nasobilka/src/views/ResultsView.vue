@@ -2,7 +2,13 @@
     <div class="flex flex-col flex-1 items-center p-8">
         <h2 class="text-white font-bold text-3xl">Výsledky:</h2>
 
-        <div class="flex gap-8 mt-8">
+        <div class="flex mt-8">
+            <p class="text-xl text-white">
+                Celkem: <span class="text-2xl">{{ correct + wrong }}</span>
+            </p>
+        </div>
+
+        <div class="flex gap-8 mt-6">
             <p class="text-xl text-white">
                 <span class="text-green-500">Správně</span>: {{ correct }}
             </p>

@@ -17,11 +17,7 @@
         </div>
 
         <div class="flex flex-col" v-if="!!!startCounter">
-            <MultiplicationView
-                v-if="mode.value == 'multiplication'"
-                @statistics="getStats"
-            />
-            <PowerView v-if="mode.value == 'power'" />
+            <PracticeExamplesView :mode="mode.value" @statistics="getStats" />
         </div>
     </div>
 </template>
@@ -32,7 +28,7 @@ import type { PropType } from "vue";
 import type { ILabelValue } from "@/shared/interfaces";
 
 import Header from "./Header.vue";
-import MultiplicationView from "@/views/MultiplicationView.vue";
+import PracticeExamplesView from "@/views/PracticeExamplesView.vue";
 import PowerView from "@/views/PowerView.vue";
 
 const emit = defineEmits(["terminatePractice", "practiceDone"]);
