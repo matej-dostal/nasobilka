@@ -37,7 +37,7 @@ const props = defineProps({
 const durationLeft = ref(props.duration);
 
 onMounted(() => {
-    //durationLeftTick();
+    durationLeftTick();
 });
 
 const durationLeftTick = () => {

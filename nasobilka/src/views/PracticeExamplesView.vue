@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col flex-1 items-center p-8 gap-6">
+    <div class="flex flex-col flex-1 items-center p-2 px-4 gap-5">
         <h2 class="text-white font-bold text-3xl mt-6">
             {{ operator == "sqrt" ? "&Sqrt;" : "" }}
             {{ firstNum }}
@@ -29,7 +29,7 @@
                     resultCorrect
                         ? 'text-green-600 bg-green-100'
                         : 'text-red-600 bg-red-100',
-                    !resultVisible ? 'text-primary bg-transparent' : '',
+                    !resultVisible ? 'text-transparent bg-transparent' : '',
                 ]"
             >
                 {{ resultCorrect ? "Správně" : "Špatně" }}
@@ -148,7 +148,7 @@ const generateNextExample = () => {
 };
 
 const validateStudentResult = () => {
-    if (studentResult.value === null) {
+    if (studentResult.value === null || resultVisible.value) {
         return;
     }
 
