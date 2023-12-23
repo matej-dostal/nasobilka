@@ -8,7 +8,7 @@
             <button
                 v-for="(btn, btnIndex) in btns"
                 :key="btnIndex"
-                class="bg-gray-200 hover:bg-gray-400 text-xl p-4 px-6 rounded-md font-bold"
+                class="bg-gray-200 hover:bg-gray-400 text-xl p-3 px-6 rounded-md font-bold"
                 @click="$emit('numBtnClick', btn)"
             >
                 {{ btn }}
@@ -17,7 +17,7 @@
 
         <div class="grid grid-cols-3 gap-4">
             <button
-                class="bg-gray-200 hover:bg-gray-400 text-xl p-4 px-6 rounded-md font-bold"
+                class="bg-gray-200 hover:bg-gray-400 text-xl p-3 px-6 rounded-md font-bold"
                 @click="$emit('numBtnClick', 0)"
             >
                 0

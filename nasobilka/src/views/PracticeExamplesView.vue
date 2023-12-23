@@ -1,6 +1,6 @@
 <template>
-    <div class="flex flex-col flex-1 items-center p-2 px-4 gap-5">
-        <h2 class="text-white font-bold text-3xl mt-6">
+    <div class="flex flex-col flex-1 items-center p-2 px-4 gap-4">
+        <h2 class="text-white font-bold text-3xl mt-2">
             {{ operator == "sqrt" ? "&Sqrt;" : "" }}
             {{ firstNum }}
             {{ operator == "*" ? "&times;" : operator == "power" ? "^" : "" }}
@@ -22,7 +22,7 @@
             </button>
         </div>
 
-        <div class="flex">
+        <div class="flex my-1">
             <h3
                 class="font-bold text-xl py-2 px-3 rounded-md text-center"
                 :class="[

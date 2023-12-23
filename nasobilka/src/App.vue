@@ -14,6 +14,7 @@
             v-if="resultsVisible"
             :correct="correct"
             :wrong="wrong"
+            :duration="duration"
             @close="() => ((resultsVisible = false), (menuVisible = true))"
         />
     </div>

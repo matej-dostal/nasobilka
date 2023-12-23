@@ -1,16 +1,22 @@
 <template>
-    <div class="flex flex-col flex-1 justify-center items-center gap-8">
+    <div class="flex flex-col flex-1 items-center gap-8">
+        <img
+            src="/img/gymjes_logo.svg"
+            class="sm:mb-8 mb-0 w-32 sm:mt-5 mt-2"
+            alt="logo"
+        />
+
         <TimePicker @time-selected="setTime" />
 
-        <nav class="flex flex-col text-white py-6 gap-8">
+        <nav class="flex flex-col text-white py-6 sm:gap-8 gap-5 mb-auto">
             <button
-                class="w-40 bg-blue-600 hover:bg-blue-700 text-2xl text-white font-bold py-8 px-4 rounded"
+                class="w-40 bg-blue-600 hover:bg-blue-700 text-2xl text-white font-bold py-5 sm:py-8 px-4 rounded"
                 @click="selectMode(Modes.MULTIPLICATION)"
             >
                 {{ Modes.MULTIPLICATION.label }}
             </button>
             <button
-                class="w-40 bg-blue-600 hover:bg-blue-700 text-2xl text-white font-bold py-8 px-4 rounded"
+                class="w-40 bg-blue-600 hover:bg-blue-700 text-2xl text-white font-bold py-5 sm:py-8 px-4 rounded"
                 @click="selectMode(Modes.POWER)"
             >
                 {{ Modes.POWER.label }}
