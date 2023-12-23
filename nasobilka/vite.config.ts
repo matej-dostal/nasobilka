@@ -58,7 +58,7 @@ export default defineConfig({
                 ],
                 theme_color: "#1313B9",
                 background_color: "#1313B9",
-                start_url: "/",
+                start_url: "https://matej-dostal.github.io/nasobilka/",
                 scope: ".",
                 orientation: "portrait",
             },
