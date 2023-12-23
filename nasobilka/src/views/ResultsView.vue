@@ -61,7 +61,7 @@ const props = defineProps({
 
 const iconPath = ref("");
 
-const iconPathPrefix = "/img/";
+const iconPathPrefix = "img/";
 const icons = {
     TOP: `${iconPathPrefix}top.svg`,
     MIDDLE: `${iconPathPrefix}middle.svg`,
