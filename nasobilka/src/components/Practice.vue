@@ -29,7 +29,6 @@ import type { ILabelValue } from "@/shared/interfaces";
 
 import Header from "./Header.vue";
 import PracticeExamplesView from "@/views/PracticeExamplesView.vue";
-import PowerView from "@/views/PowerView.vue";
 
 const emit = defineEmits(["terminatePractice", "practiceDone"]);
 const props = defineProps({
